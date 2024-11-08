@@ -1,0 +1,13 @@
+h1{
+    color: brown;
+}
+/* yaha . isliye use kiya kyuki yeh class hai agar id rahega toh # use hoga before the name */
+.first{
+    color:brown;
+    background-color: cornsilk;
+}
+
+#styleme{
+    color: tomato;
+    background-color: yellow;
+}
