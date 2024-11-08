@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+</head>
+<body>
+    <!-- Audio file kaise attach karte hai -->
+
+    <br>
+    <br>
+    <br>
+    <audio src="./Jaadugar.mp3" controls></audio>
+    <br>
+
+    <!-- Advantages of using this second method -->
+    <!-- 1. No need to download any audio file -->
+    <!-- 2. Incase the audio file is not available we can play another audio using source tag -->
+    <!-- 3.If any audio file is not played we can display text -->
+    <audio controls>
+        <source src="./check.mp3">
+        <source src="./Jaadugar.mp3">
+        Songs are not played
+    </audio>
+
+    <!--  Controls: this attribute is present, the browser will offer controls to allow the user to control audio playback, including volume, seeking, and pause/resume playback. -->
+    <br>
+    <br>
+
+    <!-- Video file kaise attach karte hai -->
+
+    <!-- Method 1 -->
+    <!-- <video src="./hawa.mp4" height="400" width="250" controls></video> -->
+
+    <!-- Method 2 -->
+    <video controls height="400" width="250" autoplay muted>
+        <source src="./hawa.mp4" type="video/mp4">
+        Video not supported
+    </video>
+
+
+    <!-- Youtube video ko kaise attach karte hai -->
+    <iframe src="https://www.youtube.com/embed/9xbqVpSi8Q8" frameborder="2" allowfullscreen></iframe>
+    <!-- after copying the video url from browser paste it in iframe and not video tag https://www.youtube.com/watch?v=9xbqVpSi8Q8 and replace the url some part
+    watch?v= with embed/ so the url can be https://www.youtube.com/embed/9xbqVpSi8Q8
+    format should be :: https://www.youtube.com/embed/video_id
+    -->
+
+    <!-- Specifies whether the <iframe> should be fullscreen or not. Set to true if the <iframe> can activate fullscreen mode by calling the requestFullscreen() method. This attribute is considered a legacy attribute and redefined as allow="fullscreen". -->
+
+    <iframe src="../Lect8/task1.html" frameborder="0"></iframe>
+
+    <!-- we can add any html code in iframe like above -->
+
+</body>
+</html>
